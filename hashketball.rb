@@ -1,248 +1,187 @@
-game = {
-  :team1 => {
-    :name => "The Ragin' Cajuns",
-    :colors => ["red", "yellow"],
-    :players => {
-      :player1 => {
-        :name => "Mike DeLaRosa",
-        :number => 45,
-        :shoe_size => 12,
-        :stats => {
-          :points => 12,
-          :rebounds => 4,
-          :assists => 2,
-          :steals => 0,
-          :blocks => 0,
-          :slam_dunks => 6
-        }
-      },
-      :player2 => {
-        :name => "Bill Nye",
-        :number => 12,
-        :shoe_size => 11,
-        :stats => {
-          :points => 28,
-          :rebounds => 9,
-          :assists => 0,
-          :steals => 0,
-          :blocks => 0,
-          :slam_dunks => 10
-        }
-      },
-      :player3 => {
-        :name => "Conor Walsh",
-        :number => 15,
-        :shoe_size => 10,
-        :stats => {
-          :points => 4,
-          :rebounds => 4,
-          :assists => 6,
-          :steals => 4,
-          :blocks => 9,
-          :slam_dunks => 1
-        }
-      },
-      :player4 => {
-        :name => "James Blake",
-        :number => 67,
-        :shoe_size => 12,
-        :stats => {
-          :points => 0,
-          :rebounds => 1,
-          :assists => 0,
-          :steals => 1,
-          :blocks => 4,
-          :slam_dunks => 0
-        }
-      },
-      :player5 => {
-        :name => "Ernest Feinhorn",
-        :number => 52,
-        :shoe_size => 11,
-        :stats => {
-          :points => 8,
-          :rebounds => 1,
-          :assists => 1,
-          :steals => 0,
-          :blocks => 2,
-          :slam_dunks => 1
-        }
-      }
-    }
-  },
-  :team2 => {
-    :name => "The Mile High Skyscrapers",
-    :colors => ["blue", "white"],
-    :players => {
-      :player1 => {
-        :name => "Al Gore",
-        :number => 4,
-        :shoe_size => 15,
-        :stats => {
-          :points => 3,
-          :rebounds => 4,
-          :assists => 5,
-          :steals => 1,
-          :blocks => 0,
-          :slam_dunks => 0
-        }
-      },
-      :player2 => {
-        :name => "King George",
-        :number => 55,
-        :shoe_size => 11,
-        :stats => {
-          :points => 18,
-          :rebounds => 4,
-          :assists => 4,
-          :steals => 1,
-          :blocks => 3,
-          :slam_dunks => 4
-        }
-      },
-      :player3 => {
-        :name => "Michael Giordan",
-        :number => 23,
-        :shoe_size => 13,
-        :stats => {
-          :points => 0,
-          :rebounds => 0,
-          :assists => 0,
-          :steals => 0,
-          :blocks => 0,
-          :slam_dunks => 0
-        }
-      },
-      :player4 => {
-        :name => "Guy Smith",
-        :number => 68,
-        :shoe_size => 10,
-        :stats => {
-          :points => 23,
-          :rebounds => 7,
-          :assists => 9,
-          :steals => 0,
-          :blocks => 0,
-          :slam_dunks => 9
-        }
-      },
-      :player5 => {
-        :name => "Billie Vacation",
-        :number => 32,
-        :shoe_size => 12,
-        :stats => {
-          :points => 18,
-          :rebounds => 12,
-          :assists => 3,
-          :steals => 7,
-          :blocks => 0,
-          :slam_dunks => 5
-        }
-      }
-    }
+def game_hash
+  {
+    away: { team_name: 'Charlotte Hornets',
+      colors: %w[Turquoise Purple],
+      players: [
+        { player_name: 'Jeff Adrien',
+          number: 4,
+          shoe: 18,
+          points: 10,
+          rebounds: 1,
+          assists: 1,
+          steals: 2,
+          blocks: 7,
+          slam_dunks: 2 },
+        { player_name: 'Bismack Biyombo',
+          number: 0,
+          shoe: 16,
+          points: 12,
+          rebounds: 4,
+          assists: 7,
+          steals: 22,
+          blocks: 15,
+          slam_dunks: 10 },
+        { player_name: 'DeSagna Diop',
+          number: 2,
+          shoe: 14,
+          points: 24,
+          rebounds: 12,
+          assists: 12,
+          steals: 4,
+          blocks: 5,
+          slam_dunks: 5 },
+        { player_name: 'Ben Gordon',
+          number: 8,
+          shoe: 15,
+          points: 33,
+          rebounds: 3,
+          assists: 2,
+          steals: 1,
+          blocks: 1,
+          slam_dunks: 0 },
+        { player_name: 'Kemba Walker',
+          number: 33,
+          shoe: 15,
+          points: 6,
+          rebounds: 12,
+          assists: 12,
+          steals: 7,
+          blocks: 5,
+          slam_dunks: 12 }
+            ] },
+    home: { team_name: 'Brooklyn Nets',
+      colors: %w[Black White],
+      players: [
+        { player_name: 'Alan Anderson',
+          number: 0,
+          shoe: 16,
+          points: 22,
+          rebounds: 12,
+          assists: 12,
+          steals: 3,
+          blocks: 1,
+          slam_dunks: 1 },
+        { player_name: 'Reggie Evans',
+          number: 30,
+          shoe: 14,
+          points: 12,
+          rebounds: 12,
+          assists: 12,
+          steals: 12,
+          blocks: 12,
+          slam_dunks: 7 },
+        { player_name: 'Brook Lopez',
+          number: 11,
+          shoe: 17,
+          points: 17,
+          rebounds: 19,
+          assists: 10,
+          steals: 3,
+          blocks: 1,
+          slam_dunks: 15 },
+        { player_name: 'Mason Plumlee',
+          number: 1,
+          shoe: 19,
+          points: 26,
+          rebounds: 11,
+          assists: 6,
+          steals: 3,
+          blocks: 8,
+          slam_dunks: 5 },
+        { player_name: 'Jason Terry',
+          number: 31,
+          shoe: 15,
+          points: 19,
+          rebounds: 2,
+          assists: 2,
+          steals: 4,
+          blocks: 11,
+          slam_dunks: 1 }
+      ] }
   }
-}
+end
 
-# Using the power of Ruby, and the Hashes you created above, answer the following questions:
-# Return the number of points scored for any player:
-#
-def points_of_player(player_name, game)
-  game.each do |team, team_hash|
-    team_hash[:players].each do |player, player_hash|
-      if player_hash[:name] == player_name
-        return player_hash[:stats][:points]
+require 'pry'
+
+def num_points_scored(player_search)
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name] == player_search
+        return player[:points]
       end
     end
   end
 end
 
-p points_of_player("Michael Giordan", game)
-
-# Return the shoe size for any player:
-#
-def shoe_size_of_player(player_name, game)
-  game.each do |team, team_hash|
-    team_hash[:players].each do |player, player_hash|
-      if player_hash[:name] == player_name
-        return player_hash[:shoe_size]
+def shoe_size(name)
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name] == name
+        return player[:shoe]
       end
     end
   end
 end
 
-p shoe_size_of_player("King George", game)
+def team_colors(team_input)
+  if team_input.downcase == "charlotte hornets" 
+    return game_hash[:away][:colors]
+  else return game_hash[:home][:colors]
+  end
+end
 
-# Return both colors for any team:
-#
-def team_colors(team_name, game)
-  game.each do |team, team_hash|
-    if team_hash[:name] == team_name
-      return (team_hash[:colors].collect do |color|
-        color
-      end)
+def team_names
+  game_hash.map do |team, team_info|
+    team_info[:team_name]
+  end
+end
+
+def player_numbers(input)
+  output = []
+  game_hash.each do |team, team_info|
+    if team_info[:team_name] == input 
+      team_info.each do |key, value|
+        if key == :players
+          value.each do |player|
+          output.push(player[:number])
+          end
+        end
+      end
     end
   end
+  return output
 end
 
-p team_colors("The Ragin' Cajuns", game)
-
-# Return both teams names:
-#
-def team_names(game)
-  game.collect do |team, team_hash|
-    team_hash[:name]
-  end
-end
-
-p team_names(game)
-
-# Return all the player numbers for a team:
-#
-def all_team_players(team_name, game)
-  game.each do |team, team_hash|
-    if team_hash[:name] == team_name
-      return (team_hash[:players].collect do |player, player_hash|
-        player_hash[:name]
-      end)
-    end
-  end
-end
-
-p all_team_players("The Ragin' Cajuns", game)
-
-# Return all the stats for a player:
-#
-def all_stats_for_player(player_name, game)
-  game.each do |team, team_hash|
-    team_hash[:players].each do |player, player_hash|
-      if player_hash[:name] == player_name
-        return player_hash[:stats]
+def player_stats(input)
+  game_hash.each do |team, team_info|
+    team_info.each do |key, value|
+      if key == :players
+        value.each do |player|
+          if input == player[:player_name]
+            player.delete(:player_name) # having player name inside the hash was a bad idea!
+            return player
+          end
+        end
       end
     end
   end
 end
 
-p all_stats_for_player("Bill Nye", game)
-
-# Return the rebounds for the player with the largest shoe size
-#
-def rebounds_for_largest_shoe_size(game)
-  max_player = nil
-  game.each do |team, team_hash|
-    team_hash[:players].each do |player, player_hash|
-      max_player ||= player_hash
-      max_player = player_hash if player_hash[:shoe_size] > max_player[:shoe_size]
+def big_shoe_rebounds
+  big_shoe = 0
+  rebounds = 0
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:shoe] > big_shoe
+        big_shoe = player[:shoe]
+        rebounds = player[:rebounds]
+      end
     end
   end
-
-  max_player[:stats][:rebounds]
+  return rebounds
 end
 
-p rebounds_for_largest_shoe_size(game)
 
-# Bonus Questions: define methods to return the answer to the following questions:
-# Which player has the most points?
-#
 def player_with_most_points(game)
   max_player = nil
   game.each do |team, team_hash|
